@@ -13,12 +13,12 @@ public class Solution4 {
             arrayList.add(scanner.nextInt());
         }
         Collections.sort(arrayList);
-        int sum = 1;
+        int target = 1;
         for (int i = 0; i < N; i++) {
             // 만들 수 없는 금액을 찾은 경우 반복 종료
-            System.out.printf("sum:%d,   i:%d \n", sum, i);
-            if (sum < arrayList.get(i)) break;
-            sum += arrayList.get(i);
+            System.out.printf("sum:%d,   i:%d \n", target, i);
+            if (target < arrayList.get(i)) break;
+            target += arrayList.get(i);
         }
     }
 }
