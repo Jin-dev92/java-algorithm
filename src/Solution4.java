@@ -16,9 +16,10 @@ public class Solution4 {
         int target = 1;
         for (int i = 0; i < N; i++) {
             // 만들 수 없는 금액을 찾은 경우 반복 종료
-            System.out.printf("sum:%d,   i:%d \n", target, i);
+//            System.out.printf("sum:%d,   i:%d \n", target, i);
             if (target < arrayList.get(i)) break;
             target += arrayList.get(i);
         }
+        System.out.println(target);
     }
 }
