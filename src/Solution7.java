@@ -15,7 +15,6 @@ public class Solution7 {
 
         for (int i = 0; i < left.length(); i++) {
             sum += Character.getNumericValue(left.charAt(i));
-            System.out.println(left.charAt(i) - '0');
         }
 
         for (int i = 0; i < right.length(); i++) {
