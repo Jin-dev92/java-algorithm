@@ -1,4 +1,5 @@
-import java.util.ArrayList;
+package greedy;
+
 import java.util.Scanner;
 
 public class Solution3 {
