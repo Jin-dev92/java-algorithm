@@ -149,7 +149,7 @@ public class Solution11 {
         int index = 0; // 다음에 회전할 정보
         // 뱀이 차지하고 있는 위치 정보(꼬리가 앞쪽)
         Queue<Position> q = new LinkedList<>();
-        q.offer(new Position(x, y));
+        q.offer(new Position(x, y)); // offer 와 add 의 차이는 add 는 큐의 용량 제한에 걸리면 예외가 발생하고 offer 는 false 반환.
 
         while (true) {
             int nx = x + dx[direction];
