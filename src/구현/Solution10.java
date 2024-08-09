@@ -1,3 +1,5 @@
+package 구현;
+
 import java.util.Arrays;
 
 class Solution10 {

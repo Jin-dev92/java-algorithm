@@ -1,4 +1,4 @@
-package greedy;
+package 탐욕알고리즘;
 
 import java.util.ArrayList;
 import java.util.Scanner;

@@ -1,3 +1,5 @@
+package 구현;
+
 import java.util.Scanner;
 
 public class Solution7 {
