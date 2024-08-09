@@ -18,9 +18,11 @@ class Solution10 {
                 .flatMapToInt(Arrays::stream)
                 .filter(l -> l == 0).sum();
 
-        if (flatLock > flatKey) return false; // 열쇠보다 열쇠 홈이 더 큰 경우
-        // x,y 축으로 이동해 가며 열쇠 홈에 맞는지 확인한다.
-        // 열쇠를 시계방향으로 계속 돌려본다.
+        if (flatLock > flatKey) return false; // 열쇠보다 열쇠 홈이 더 큰 경우에는 어떻게든 불가능하므로 false 를 리턴해준다.
+
+        // 1. x,y 축으로 이동해 가며 열쇠 홈에 맞는지 확인한다.
+        // 2. 열쇠가 맞지 않은 경우 열쇠를 시계방향으로 돌려본다.
+
         int lockSize = lock.length;
         int keySize = key.length;
         // 자물쇠의 크기를 기존의 3배로 변환
