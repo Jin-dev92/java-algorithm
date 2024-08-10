@@ -129,7 +129,7 @@ public class Solution11 {
 
     public static int n, k, l;
     public static int[][] arr = new int[101][101]; // 맵 정보
-    public static ArrayList<구현.Solution12.Node> info = new ArrayList<>(); // 방향 회전 정보
+    public static ArrayList<Node> info = new ArrayList<>(); // 방향 회전 정보
 
     // 처음에는 오른쪽을 보고 있으므로(동, 남, 서, 북)
     public static int dx[] = {0, 1, 0, -1};
@@ -204,7 +204,7 @@ public class Solution11 {
         for (int i = 0; i < l; i++) {
             int x = sc.nextInt();
             char c = sc.next().charAt(0);
-            info.add(new 구현.Solution12.Node(x, c));
+            info.add(new Node(x, c));
         }
 
         System.out.println(simulate());
