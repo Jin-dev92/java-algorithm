@@ -1,4 +1,4 @@
-package 구현;
+package 구현.Solution12;
 
 
 import java.util.Arrays;
@@ -91,8 +91,4 @@ class Solution12 {
         }
         return true;
     }
-}
-
-class Solution12Answer {
-
 }
