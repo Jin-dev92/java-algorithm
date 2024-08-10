@@ -64,14 +64,11 @@ class Solution12 {
         int[][] graph = new int[n][n];
         Queue<int[]> queue = new LinkedList<>();
         for (int[] frame : build_frame) {
-            int[][] prevGraph = graph;
-            // answer 에 build_frame 정보 입력하기
             Structure st = new Structure(new int[]{frame[0], frame[1]}, frame[2], frame[3]);
-
-            if (!check(graph)) { // answer 가 규칙에 위반됐는지 확인하기
-                graph = prevGraph;
+            if (!check(st, graph)) { // 제작하려는 Structure 가 규칙에 위반됐는지 확인하기
                 continue;
             }
+            // answer 에 build_frame 정보 입력하기
             queue.offer(st.getAnswer()); // answer 가 규칙에 위반 되지 않았으므로 정답 큐에 입력.
         }
         System.out.println(Arrays.deepToString(graph));
@@ -86,7 +83,7 @@ class Solution12 {
      *   5. 구조물은 교차점 좌표를 기준으로 보는 오른쪽, 기둥은 위쪽 방향으로 설치 또는 삭제합니다.
      * */
 
-    public boolean check(int[][] cached) {
+    public boolean check(Structure st, int[][] cached) {
         for (int i = 0; i < cached.length; i++) {
             for (int j = 0; j < cached[i].length; j++) {
 
@@ -94,4 +91,8 @@ class Solution12 {
         }
         return true;
     }
+}
+
+class Solution12Answer {
+
 }
