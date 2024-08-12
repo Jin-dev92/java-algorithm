@@ -52,6 +52,7 @@ public class Solution16 {
         if (count == 3) {
             for (int i = 0; i < n; i++) {
                 for (int j = 0; j < m; j++) {
+                    // 원본 데이터 복사
                     temp[i][j] = arr[i][j];
                 }
             }
