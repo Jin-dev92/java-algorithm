@@ -1,5 +1,3 @@
-package 최단경로;
-
 class Solution18 {
 
     // "균형잡힌 괄호 문자열"의 인덱스 반환
