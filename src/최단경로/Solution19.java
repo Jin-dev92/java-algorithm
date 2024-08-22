@@ -1,3 +1,5 @@
+package 최단경로;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
