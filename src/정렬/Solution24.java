@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Solution24 {
     public static int n;
-    public static List<Integer> list = new ArrayList<>();
+    public static List<Integer> list = new ArrayList<Integer>();
     public static int[] distance = new int[(int) 1e5]; // x에 안테나를 세웠을 경우에 총 거리 값
 
     public static void main(String[] args) {
