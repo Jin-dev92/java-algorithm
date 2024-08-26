@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class Solution24_1 {
     public static int n;
-    public static List<Integer> list = new ArrayList<Integer>();
+    public static List<Integer> list = new ArrayList<>();
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
